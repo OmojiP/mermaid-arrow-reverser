@@ -43,3 +43,8 @@ classDiagram
 `extension.js`をvscodeで開いてF5を押すとテストできます
 
 vscodeの拡張機能タブ→…→VSIXからのインストールから、vsixファイルを選択するとインストールできます
+
+
+## GitHub
+
+https://github.com/OmojiP/mermaid-class-tools
