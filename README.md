@@ -1,13 +1,17 @@
 # Mermaid Arrow Reverser
 
 chatGPTに作ってもらった
-Markdown内のMermaid記法 `a --> b` を `b <-- a` に反転するVS Code拡張機能です。
+Markdown内のMermaid記法 `a --> b` を `b <-- a` に反転するVS Code拡張機能です。(矢印の意味確認付き)
+
+![](img\use.gif)
 
 ## 使い方
 
 1. MermaidコードブロックのあるMarkdownファイルを開く
 2. 矢印のある行にカーソルを移動
 3. `Ctrl + .`（Macは`Cmd + .`）を押すと、その行の矢印が反転
+
+- 矢印にカーソルを重ねると矢印の役割説明が表示されます
 
 ## 適用例
 
