@@ -8,6 +8,7 @@
     },
     "icon": "icon.png",
     "license": "MIT",
+    "publisher": "ecbf7f07-1c26-6919-a834-fd9d001922fc",
     "activationEvents": ["onLanguage:markdown"],
     "main": "extension.js",
     "contributes": {
