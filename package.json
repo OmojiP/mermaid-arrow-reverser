@@ -2,7 +2,7 @@
     "name": "mermaid-class-tools",
     "displayName": "Mermaid Class Tools",
     "description": "Markdown内のMermaid記法をアシスト (リネーム / 矢印の向き反転 / 矢印の役割表示)",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "engines": {
       "vscode": "^1.70.0"
     },
