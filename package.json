@@ -1,11 +1,12 @@
 {
-    "name": "mermaid-arrow-reverser",
-    "displayName": "Mermaid Arrow Reverser",
-    "description": "Markdown内のMermaid記法の矢印をクイック修正で反転する",
+    "name": "mermaid-class-tools",
+    "displayName": "Mermaid Class Tools",
+    "description": "Markdown内のMermaid記法をアシスト (リネーム / 矢印の向き反転 / 矢印の役割表示)",
     "version": "1.0.0",
     "engines": {
       "vscode": "^1.70.0"
     },
+    "icon": "icon.png",
     "activationEvents": ["onLanguage:markdown"],
     "main": "extension.js",
     "contributes": {
@@ -18,7 +19,7 @@
       "codeActions": [
         {
           "language": "markdown",
-          "title": "Reverse Mermaid Arrow"
+          "title": "Mermaid Class Tools"
         }
       ]
     }

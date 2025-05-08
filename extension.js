@@ -3,19 +3,13 @@ const { MermaidClassRenameProvider } = require('./renameProvider');
 
 function activate(context) {
 
-    console.log('activate!!!!');
-
     registerMermaidArrowHover(context);
-
-    console.log('activate!!!!: 10');
     
     // F2 リネーム用プロバイダ登録
     const renameProvider = new MermaidClassRenameProvider();
     context.subscriptions.push(
         vscode.languages.registerRenameProvider('markdown', renameProvider)
     );
-
-    console.log('activate!!!!: 18');
 
     const arrowMap = {
         '--|>': '<|--',
@@ -78,8 +72,6 @@ function activate(context) {
             providedCodeActionKinds: [vscode.CodeActionKind.QuickFix]
         })
     );
-
-    console.log('activate!!!!: 82');
 }
 
 function escapeRegExp(str) {

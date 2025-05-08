@@ -10,25 +10,30 @@ class MermaidClassRenameProvider {
         const oldName = document.getText(wordRange);
         const edit = new vscode.WorkspaceEdit();
 
-        for (const block of mermaidBlocks) {
-            const { code, rangeOffset } = block;
-            const regex = /\b\w+\b/g;
-            let match;
-            while ((match = regex.exec(code)) !== null) {
-                if (match[0] === oldName) {
-                    const start = document.positionAt(rangeOffset + match.index);
-                    const end = document.positionAt(rangeOffset + match.index + oldName.length);
-                    edit.replace(document.uri, new vscode.Range(start, end), newName);
-                }
+        const offset = document.offsetAt(position);
+
+        // 編集対象の mermaid ブロックを特定
+        const currentBlock = mermaidBlocks.find(
+            block => offset >= block.rangeOffset && offset < block.rangeOffset + block.code.length
+        );
+    
+        if (!currentBlock) return;
+    
+        const { code, rangeOffset } = currentBlock;
+        const regex = /\b\w+\b/g;
+        let match;
+        while ((match = regex.exec(code)) !== null) {
+            if (match[0] === oldName) {
+                const start = document.positionAt(rangeOffset + match.index);
+                const end = document.positionAt(rangeOffset + match.index + oldName.length);
+                edit.replace(document.uri, new vscode.Range(start, end), newName);
             }
         }
-
+    
         return edit;
     }
 
     prepareRename(document, position) {
-        console.log('prepareRename called');
-        
         const fullText = document.getText();
         const mermaidBlocks = getMermaidCodeBlocks(fullText);
 
