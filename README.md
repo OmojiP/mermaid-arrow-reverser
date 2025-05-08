@@ -3,7 +3,7 @@
 chatGPTに作ってもらった
 Markdown内のMermaid記法 `a --> b` を `b <-- a` に反転するVS Code拡張機能です。(矢印の意味確認付き)
 
-![](img\use.gif)
+![](https://github.com/OmojiP/mermaid-arrow-reverser/blob/main/img/use.gif)
 
 ## 使い方
 
