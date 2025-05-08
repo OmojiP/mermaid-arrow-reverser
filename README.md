@@ -3,7 +3,7 @@
 chatGPTに作ってもらった
 Markdown内のMermaid記述を支援するVS Code拡張機能です。
 
-![](https://raw.githubusercontent.com/OmojiP/mermaid-arrow-reverser/main/img/use.gif)
+![](https://raw.githubusercontent.com/OmojiP/mermaid-class-tools/main/img/use.gif)
 
 ## 使い方
 
