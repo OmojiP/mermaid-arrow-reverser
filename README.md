@@ -1,10 +1,9 @@
-# Mermaid Arrow Reverser
+# Mermaid Class Tools
 
 chatGPTに作ってもらった
-Markdown内のMermaid記法 `a --> b` を `b <-- a` に反転するVS Code拡張機能です。(矢印の意味確認付き)
+Markdown内のMermaid記述を支援するVS Code拡張機能です。
 
 ![](https://raw.githubusercontent.com/OmojiP/mermaid-arrow-reverser/main/img/use.gif)
-
 
 ## 使い方
 
