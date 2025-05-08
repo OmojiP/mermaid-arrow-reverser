@@ -4,26 +4,32 @@
     "description": "Markdown内のMermaid記法をアシスト (リネーム / 矢印の向き反転 / 矢印の役割表示)",
     "version": "0.1.0",
     "engines": {
-      "vscode": "^1.70.0"
+        "vscode": "^1.70.0"
     },
     "icon": "icon.png",
     "license": "MIT",
-    "publisher": "ecbf7f07-1c26-6919-a834-fd9d001922fc",
-    "activationEvents": ["onLanguage:markdown"],
+    "publisher": "OmojiP",
+    "activationEvents": [
+        "onLanguage:markdown"
+    ],
     "main": "extension.js",
     "contributes": {
-      "languages": [
-        {
-          "id": "markdown",
-          "extensions": [".md"]
-        }
-      ],
-      "codeActions": [
-        {
-          "language": "markdown",
-          "title": "Mermaid Class Tools"
-        }
-      ]
+        "languages": [
+            {
+                "id": "markdown",
+                "extensions": [
+                    ".md"
+                ]
+            }
+        ],
+        "codeActions": [
+            {
+                "language": "markdown",
+                "title": "Mermaid Class Tools"
+            }
+        ]
+    },
+    "dependencies": {
+        "vsce": "^2.15.0"
     }
-  }
-  
+}
